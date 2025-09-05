@@ -2386,7 +2386,7 @@
                                 placeholder="Enter your company name">
                         </div>
 
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label for="plan">Interested Plan</label>
                             <select id="plan" name="plan" class="form-control">
                                 <option value="">Select a plan</option>
@@ -2395,7 +2395,7 @@
                                 <option value="business">Business</option>
                                 <option value="enterprise">Enterprise</option>
                             </select>
-                        </div>
+                        </div> -->
 
                         <div class="form-group">
                             <label for="subject">Subject *</label>
@@ -2687,7 +2687,7 @@
                     const name = nameInput.value.trim();
                     const email = emailInput.value.trim();
                     const company = document.getElementById('company').value.trim();
-                    const plan = document.getElementById('plan').value;
+                    //const plan = document.getElementById('plan').value;
                     const subject = subjectInput.value.trim();
                     const message = messageInput.value.trim();
 
@@ -2695,7 +2695,7 @@
                         name: name,
                         email: email,
                         company: company,
-                        plan: plan,
+                        plan: '', // plan,
                         subject: subject,
                         message: message
                     };

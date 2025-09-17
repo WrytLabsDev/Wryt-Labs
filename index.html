@@ -1767,7 +1767,7 @@
             .hero-btns {
                 flex-direction: column;
                 gap: 15px;
-                align-items: flex-start;
+                /* align-items: flex-start; */
             }
 
             .btn-outline {
@@ -1838,6 +1838,33 @@
         }
 
         .coming-soon-box p {
+            margin: 1rem 0;
+            color: var(--text-muted);
+        }
+
+        .pricing-placeholder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 200px;
+            background: var(--light-bg);
+            border: 1px dashed var(--border-color);
+            border-radius: 12px;
+            margin-top: 2rem;
+        }
+
+        .pricing-message {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+        }
+
+        .pricing-message h3 {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .pricing-message p {
             margin: 1rem 0;
             color: var(--text-muted);
         }
@@ -2231,7 +2258,7 @@
             <div class="demo-placeholder">
                 <div class="coming-soon-box">
                     <i class="fas fa-laptop-code" style="font-size: 2rem; color: var(--secondary);"></i>
-                    <!-- <h3>Live Demo in Progress</h3> -->
+                    <h3>Soon You’ll Edit Here in Real Time</h3>
                     <p>
                         We’re actively working on bringing the full-featured WrytNg Editor demo.
                         Until then, get a hands-on walkthrough tailored to your needs.
@@ -2243,13 +2270,13 @@
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="pricing fade-in">
+    <!--<section id="pricing" class="pricing fade-in">
         <div class="container">
             <h2 class="section-title">Flexible Plans, Powerful Value</h2>
             <p class="section-subtitle">From startup to enterprise, Built for scale. Priced for you. <br>Contact
                 sales@wrytlabs.dev to explore tailored pricing. Lets do this!</p>
 
-            <!-- <div class="pricing-grid">
+             <div class="pricing-grid">
                 <div class="pricing-card">
                     <h3>Starter</h3>
                     <div class="price">$0<span>/forever</span></div>
@@ -2296,9 +2323,9 @@
                     </ul>
                     <a href="#" class="btn">Contact Sales</a>
                 </div>
-            </div> -->
-
-            <!-- <div style="margin-top: 100px;">
+            </div> 
+            
+            <div style="margin-top: 100px;">
                 <h2 class="section-title">What Our Users Say</h2>
                 <p class="section-subtitle">Don't just take our word for it - hear from our satisfied customers.</p>
 
@@ -2339,7 +2366,31 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div> 
+        </div>
+    </section>-->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing fade-in">
+        <div class="container">
+            <h2 class="section-title">Flexible Plans, Fair Value</h2>
+            <p class="section-subtitle">
+                We don’t believe in overpriced features or one-size-fits-all plans.
+                Every customer gets a tailored solution that matches their needs and budget.
+                From startups to enterprises, you’ll always get the right value at the right price.
+            </p>
+
+            <div class="pricing-placeholder">
+                <div class="pricing-message">
+                    <i class="fas fa-balance-scale" style="font-size: 2rem; color: var(--secondary);"></i>
+                    <h3>Custom Plans, No Surprises</h3>
+                    <p>
+                        Instead of rigid pricing tiers, we work with you to design the perfect plan —
+                        ensuring you pay only for what you truly need.
+                    </p>
+                    <a href="#contact" class="btn btn-primary">Contact Sales</a>
+                </div>
+            </div>
         </div>
     </section>
 
